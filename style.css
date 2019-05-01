@@ -1,0 +1,342 @@
+/* //////////// Navigation ////////// */
+
+nav {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e8907d;
+}
+
+#nav2 a:hover {
+  color: #d3e8f5;
+}
+
+nav img {
+  width: 50%;
+  margin-top: -1.2em;
+  padding: 0;
+}
+
+nav div {
+  margin: auto auto auto 29em;
+}
+
+nav #contact {
+  float: right;
+}
+
+/* //////////// Landing page ///////// */
+
+h1 {
+  font-size: 5em;
+}
+#indexwrapper {
+  background-color: #f4e8da;
+  width: 100%;
+  padding-top: 4em;
+  margin: 0;
+}
+
+#indexwrapper * {
+  color: #e8907d;
+}
+
+#headingwrapper {
+  float: left;
+  margin-top: 0.8em;
+  margin-left: 10em;
+}
+
+#headingwrapper h1 {
+  font-size: 5em;
+}
+
+#headingwrapper div {
+  height: 1em;
+  width: 50%;
+  background-color: #e8907d;
+  margin-top: -4em;
+}
+
+#txtwrapper {
+  float: left;
+  margin-top: 2.5em;
+  margin-left: 19em;
+  font-size: 1.5em;
+  width: 24%;
+}
+
+#placeholder:before {
+  content: "Coding";
+  font-weight: bold;
+  animation: swapTxt infinite 5s;
+}
+
+@keyframes swapTxt {
+  0% {
+    content: "Coding";
+    font-weight: bold;
+  }
+  20% {
+    content: "Design";
+    font-weight: bold;
+  }
+  40% {
+    content: "Colors";
+    font-weight: bold;
+  }
+  60% {
+    content: "Video";
+    font-weight: bold;
+  }
+  80% {
+    content: "Animation";
+    font-weight: bold;
+  }
+}
+
+#imgcontainer {
+  margin-top: 18%;
+  margin-left: 24%;
+  width: 60%;
+}
+#imgcontainer img {
+  width: 25%;
+}
+
+#img1 {
+  margin-left: 15%;
+}
+
+#img2 {
+  margin-right: 15%;
+}
+
+#img3,
+#img4,
+#img5 {
+  z-index: 1;
+  position: relative;
+  margin-top: -9em;
+}
+
+#img3,
+#img5 {
+  padding-bottom: 2em;
+}
+
+#txt1,
+#txt2 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: inline-block;
+}
+
+#txt1 {
+  top: 64%;
+  left: 19%;
+  z-index: 1;
+  position: absolute;
+}
+
+#txt2 {
+  top: 64%;
+  left: 69%;
+  z-index: 1;
+  position: absolute;
+}
+
+#txt3,
+#txt4 {
+  display: inline-block;
+  margin-top: -2em;
+  padding-bottom: 1.5em;
+}
+
+#txt3 {
+  margin-left: 15em;
+}
+
+#txt4 {
+  margin-left: 10em;
+}
+
+/* //////////// About me page ///////// */
+
+#aboutmewrapper {
+  padding-top: 4em;
+  margin: 0;
+  width: 100%;
+}
+#firsthalf {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  background-color: #f5e295;
+  height: 50em;
+  position: absolute;
+}
+
+#secondhalf {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+  margin-left: 50%;
+  background-color: #d3e8f5;
+  height: 50em;
+  position: absolute;
+}
+
+#aboutmewrapper img {
+  width: 35%;
+  position: absolute;
+  z-index: 1;
+  bottom: -3em;
+  left: 30%;
+}
+
+#headingwrapper2,
+#headingwrapper3 {
+  float: left;
+  margin-top: 0.4em;
+  margin-left: 1em;
+}
+
+#headingwrapper2 h1,
+#headingwrapper3 h1 {
+  font-size: 4em;
+  color: white;
+}
+#headingwrapper2 div,
+#headingwrapper3 div {
+  height: 1em;
+  width: 50%;
+  background-color: white;
+  margin-top: -3em;
+}
+
+#firsthalf p {
+  color: white;
+  margin-top: 8em;
+  margin-left: 1em;
+  width: 80%;
+  font-size: 1.5em;
+}
+
+/*Slideshow*/
+.slidescontainer {
+  max-width: 30em;
+  max-height: 24em;
+  margin-left: 5em;
+  margin-top: 10em;
+  overflow-x: scroll;
+
+  white-space: nowrap; /*Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered*/
+}
+.slidescontainer * {
+  display: inline-block;
+}
+
+.slidescontainer article {
+  position: relative;
+  background-color: white;
+  height: 24em;
+  width: 30em;
+}
+
+/* //////////// Projects page ///////// */
+
+#projectswrapper {
+  margin-top: 5em;
+  height: 30em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "project1 project2 project3" "project4 project4 project3";
+}
+
+#projectswrapper div {
+  background-color: lightblue;
+}
+
+#project1 {
+  grid-area: project1;
+  width: 20em;
+}
+#project2 {
+  grid-area: project2;
+  width: 20em;
+}
+#project3 {
+  grid-area: project3;
+  width: 20em;
+}
+#project4 {
+  grid-area: project4;
+  width: 40em;
+  margin: 1em;
+}
+
+/* //////////// Modal ///////// */
+
+#contactmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0em;
+  top: 0em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  animation: fadeIn linear 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.close {
+  color: black;
+  float: right;
+  font-size: 2.4em;
+  margin-right: 1em;
+  margin-top: 0.4em;
+  cursor: pointer;
+}
+
+#contactmodal h2 {
+  margin-top: 2.5em;
+  font-size: 3em;
+}
+
+#contactmodal p {
+  color: rgb(93, 111, 188);
+  font-size: 2em;
+  font-weight: bold;
+}
+#contactmodal img {
+  width: 4%;
+}
