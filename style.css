@@ -266,15 +266,20 @@ h1 {
 /* //////////// Projects page ///////// */
 
 #projectswrapper {
-  margin-top: 5em;
+  margin: 5em auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  width: 80%;
   height: 30em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "project1 project2 project3" "project4 project4 project3";
+  grid-template-areas: "project1 project2 project3" "project4 project5 project3";
 }
 
 #projectswrapper div {
   background-color: lightblue;
+  margin: 0;
+  padding: 0;
 }
 
 #project1 {
@@ -291,7 +296,13 @@ h1 {
 }
 #project4 {
   grid-area: project4;
-  width: 40em;
+  width: 20em;
+  margin: 1em;
+}
+
+#project5 {
+  grid-area: project5;
+  width: 20em;
   margin: 1em;
 }
 
