@@ -63,10 +63,7 @@ h2 {
 }
 
 h3,
-h4 {
-  font-family: "Open Sans", sans-serif;
-}
-
+h4,
 p,
 a {
   font-family: "Open Sans", sans-serif;
@@ -81,9 +78,6 @@ a {
 #indexwrapper {
   background-color: #f4e8da;
   padding-top: 4em;
-}
-
-#indexwrapper * {
   color: #e8907d;
 }
 
@@ -697,10 +691,10 @@ a {
 }
 
 #aboutmewrapper img {
-  width: 40%;
+  width: 41%;
   position: absolute;
   z-index: 1;
-  bottom: -7em;
+  bottom: -7.1em;
   left: 25%;
 }
 
@@ -742,19 +736,18 @@ a {
 
 .slidescontainer * {
   display: inline-block;
+  color: #bdddf1;
 }
 
 .slidescontainer article {
-  background-color: #e8f2f8;
+  background-color: white;
   height: 32em;
   width: 30em;
-  border-radius: 10%;
 }
 
-/*Positioning of text from here */
+/*Positioning of text from here https://codepen.io/rpsthecoder/pen/LJZzRV*/
 .slidescontainer p {
   width: calc(100% - 120px);
-  /* -x- width = 100%[article width] - ( 100px[total width of .title and .image] +  20px[for aesthetics]) */
   margin: 80px auto auto -50px;
   vertical-align: top;
   white-space: initial;
