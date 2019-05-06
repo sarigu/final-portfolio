@@ -51,7 +51,7 @@ nav #contact {
   margin-right: 1em;
 }
 
-/* //////////// Landing page ///////// */
+/* ////////////In general ///////// */
 
 h1 {
   font-size: 5em;
@@ -62,7 +62,8 @@ h2 {
   font-family: "Open Sans", sans-serif;
 }
 
-h3 {
+h3,
+h4 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -70,6 +71,12 @@ p,
 a {
   font-family: "Open Sans", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* //////////// Landing page ///////// */
 
 #indexwrapper {
   background-color: #f4e8da;
@@ -213,38 +220,39 @@ a {
 #projectswrapper div {
   margin: 0;
   padding: 0;
+  width: 20em;
+  height: 18em;
 }
 
 #project1 {
   grid-area: project1;
-  width: 20em;
   background-color: #d5d5d5;
 }
 
 #project1:hover {
-  background-color: #d5d5d58c;
+  background-color: #c5c5c5;
   cursor: pointer;
 }
 
 #project1 img {
-  margin-left: 8%;
-  margin-top: 5%;
+  margin-left: 25%;
+  margin-top: 20%;
+  width: 45%;
 }
 
 #project2 {
   grid-area: project2;
-  width: 20em;
   background-color: #ffc391;
 }
 #project2:hover {
-  background-color: #ffc391b0;
+  background-color: #fdbb84;
   cursor: pointer;
 }
 
 #project2 img {
   width: 60%;
   margin-left: 20%;
-  margin-top: 12%;
+  margin-top: 15%;
 }
 
 #project3 {
@@ -253,91 +261,43 @@ a {
   background-color: #b7d3c1;
 }
 #project3:hover {
-  background-color: #b7d3c198;
+  background-color: #9fcaaf;
   cursor: pointer;
 }
 #project3 img {
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 5%;
 }
 
 #project4 {
   grid-area: project4;
-  width: 20em;
-  margin: 1em;
   background-color: #dcdeef;
 }
 
 #project4:hover {
-  background-color: #dcdeef8e;
+  background-color: #d0d3ec;
   cursor: pointer;
 }
 
 #project4 img {
   margin-left: 10%;
+  margin-top: 10%;
 }
 
 #project5 {
   grid-area: project5;
-  width: 20em;
-  margin: 1em;
-  background-color: #ffdaa8;
+
+  background-color: #b0dff0;
 }
 
 #project5:hover {
-  background-color: #ffd9a898;
+  background-color: #a5e5fc;
   cursor: pointer;
 }
 
 #project5 img {
   margin-left: 10%;
   margin-top: 5%;
-}
-
-/* //////////// Modal ///////// */
-
-#contactmodal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0em;
-  top: 0em;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: white;
-  animation: fadeIn linear 0.4s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.close {
-  color: black;
-  float: right;
-  font-size: 2.4em;
-  margin-right: 1em;
-  margin-top: 0.4em;
-  cursor: pointer;
-}
-
-#contactmodal h2 {
-  margin-top: 2.5em;
-  font-size: 3em;
-}
-
-#contactmodal p {
-  color: rgb(93, 111, 188);
-  font-size: 2em;
-  font-weight: bold;
-}
-#contactmodal img {
-  width: 4%;
 }
 
 /* //////////// Hogwarts student list///////// */
@@ -403,7 +363,20 @@ a {
 #hp-section3,
 #hp-section4 {
   color: #d5d5d5;
-  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#hp-section2 a,
+#hp-section3 a,
+#hp-section4 a {
+  color: #a8a8a8;
+  font-weight: bold;
+}
+
+#hp-section2 a:hover,
+#hp-section3 a:hover,
+#hp-section4 a:hover {
+  color: #7c7c7c;
 }
 
 .hp-headingwrapper2 {
@@ -427,7 +400,7 @@ a {
 
 #volt-section1 {
   background-color: #ffc391;
-  color: #fe9c4a;
+  color: #f78e39;
   padding: 1.5em;
 }
 
@@ -447,9 +420,14 @@ a {
 #volt-section3,
 #volt-section4 {
   color: #ffc391;
-  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
+#volt-icons {
+  background-color: #ffc391;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
 #volt-section2,
 #volt-section3,
 #volt-section4 p {
@@ -457,8 +435,25 @@ a {
   margin-left: 3.5em;
 }
 
+#volt-section2 a,
+#volt-section3 a,
+#volt-section4 a {
+  color: #f78e39;
+  font-weight: bold;
+}
+
+#volt-section2 a:hover,
+#volt-section3 a:hover,
+#volt-section4 a:hover {
+  color: #f78f39c0;
+}
+
 #volt-section2 span {
   font-weight: bold;
+}
+
+#volt-section2 p {
+  margin-top: 1.9em;
 }
 
 .volt-headingwrapper2,
@@ -484,7 +479,7 @@ a {
 /* //////////// Kogi's lunchbox adventures///////// */
 
 #kogi-section1 {
-  background-color: #ffdaa8;
+  background-color: #b0dff0;
   color: white;
   padding: 1.5em;
 }
@@ -493,8 +488,8 @@ a {
 #kogi-section3,
 #kogi-section4,
 #kogi-section5 {
-  color: #ffdaa8;
-  margin-top: 4em;
+  color: #b0dff0;
+  margin-bottom: 4em;
 }
 
 #kogi-section2,
@@ -505,21 +500,46 @@ a {
   margin-left: 3.5em;
 }
 
+#kogi-section2 a,
+#kogi-section3 a,
+#kogi-section4 a,
+#kogi-section5 a {
+  color: #4caed1;
+  font-weight: bold;
+}
+
+#kogi-section2 a:hover,
+#kogi-section3 a:hover,
+#kogi-section4 a:hover,
+#kogi-section5 a:hover {
+  color: #0d94c5;
+}
+
 .kogi-underline2 {
   height: 0.5em;
   width: 50%;
   margin-top: -2em;
-  background-color: #ffdaa8;
+  background-color: #b0dff0;
+}
+
+#kogi-img1,
+#kogi-img2 {
+  background-color: #b0dff0;
 }
 
 #kogi-section5 .kogi-headingwrapper2 {
   margin-left: 3.5em;
 }
+
+#kogi-section2 .kogi-headingwrapper2 {
+  margin-right: 90%;
+}
+
 /* //////////// Discover tokyo///////// */
 
 #tokyo-section1 {
   background-color: #dcdeef;
-  color: #8791e3;
+  color: #818bd4;
   padding: 1.5em;
 }
 
@@ -527,7 +547,7 @@ a {
   height: 0.5em;
   width: 50%;
   margin-top: -2em;
-  background-color: #8791e3;
+  background-color: #818bd4;
 }
 
 #tokyo-section2,
@@ -535,7 +555,11 @@ a {
 #tokyo-section4,
 #tokyo-section5 {
   color: #dcdeef;
-  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#tokyo-section2 .tokyo-headingwrapper2 {
+  margin-right: 90%;
 }
 
 .tokyo-underline2 {
@@ -551,6 +575,21 @@ a {
 #tokyo-section5 p {
   width: 50%;
   margin-left: 3.5em;
+}
+
+#tokyo-section2 a,
+#tokyo-section3 a,
+#tokyo-section4 a,
+#tokyo-section5 a {
+  color: #818bd4;
+  font-weight: bold;
+}
+
+#tokyo-section2 a:hover,
+#tokyo-section3 a:hover,
+#tokyo-section4 a:hover,
+#tokyo-section5 a:hover {
+  color: #606dd3;
 }
 
 #tokyo-section5 .tokyo-headingwrapper2 {
@@ -576,7 +615,7 @@ a {
 #todo-section4,
 #todo-section5 {
   color: #b7d3c1;
-  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .todo-underline2 {
@@ -592,6 +631,42 @@ a {
 #todo-section5 p {
   width: 50%;
   margin-left: 3.5em;
+}
+
+#todo-section2 a,
+#todo-section3 a,
+#todo-section4 a,
+#todo-section5 a {
+  color: #4b5f54;
+  font-weight: bold;
+}
+
+#todo-section2 a:hover,
+#todo-section3 a:hover,
+#todo-section4 a:hover,
+#todo-section5 a:hover {
+  color: #4b5f54ce;
+}
+
+#todo-section1 a {
+  color: #a5beae;
+}
+
+#todo-colors div {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+#color1 {
+  background-color: #195427;
+}
+
+#color2 {
+  background-color: #b9d3bf;
 }
 
 /* //////////// About me page ///////// */
@@ -625,7 +700,7 @@ a {
   width: 40%;
   position: absolute;
   z-index: 1;
-  bottom: -3.4em;
+  bottom: -7em;
   left: 25%;
 }
 
@@ -649,7 +724,7 @@ a {
 
 #firsthalf p {
   color: white;
-  margin-top: 9em;
+  margin-top: 10em;
   margin-left: 2.5em;
   width: 70%;
 }
@@ -660,7 +735,7 @@ a {
   max-width: 30em;
   max-height: 24em;
   margin-left: 4.5em;
-  margin-top: 112px;
+  margin-top: 8em;
   overflow-x: scroll;
   white-space: nowrap; /*Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered*/
 }
@@ -671,8 +746,9 @@ a {
 
 .slidescontainer article {
   background-color: #e8f2f8;
-  height: 24em;
+  height: 32em;
   width: 30em;
+  border-radius: 10%;
 }
 
 /*Positioning of text from here */
@@ -708,4 +784,50 @@ a {
 
 #a3 p {
   margin-left: -3.6em;
+}
+
+/* //////////// Modal ///////// */
+
+#contactmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0em;
+  top: 0em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  animation: fadeIn linear 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.close {
+  color: black;
+  float: right;
+  font-size: 2.4em;
+  margin-right: 1em;
+  margin-top: 0.4em;
+  cursor: pointer;
+}
+
+#contactmodal h2 {
+  margin-top: 2.5em;
+  font-size: 3em;
+}
+
+#contactmodal p {
+  color: rgb(93, 111, 188);
+  font-size: 2em;
+  font-weight: bold;
+}
+#contactmodal img {
+  width: 4%;
 }
