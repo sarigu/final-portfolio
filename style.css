@@ -220,11 +220,11 @@ a {
 
 #project1 {
   grid-area: project1;
-  background-color: #d5d5d5;
+  background-color: #c5c5c5;
 }
 
 #project1:hover {
-  background-color: #c5c5c5;
+  background-color: #d5d5d5;
   cursor: pointer;
 }
 
@@ -236,10 +236,10 @@ a {
 
 #project2 {
   grid-area: project2;
-  background-color: #ffc391;
+  background-color: #fdbb84;
 }
 #project2:hover {
-  background-color: #fdbb84;
+  background-color: #ffc391;
   cursor: pointer;
 }
 
@@ -252,10 +252,10 @@ a {
 #project3 {
   grid-area: project3;
   width: 20em;
-  background-color: #b7d3c1;
+  background-color: #9fcaaf;
 }
 #project3:hover {
-  background-color: #9fcaaf;
+  background-color: #b7d3c1;
   cursor: pointer;
 }
 #project3 img {
@@ -265,11 +265,11 @@ a {
 
 #project4 {
   grid-area: project4;
-  background-color: #dcdeef;
+  background-color: #d0d3ec;
 }
 
 #project4:hover {
-  background-color: #d0d3ec;
+  background-color: #dcdeef;
   cursor: pointer;
 }
 
@@ -280,12 +280,11 @@ a {
 
 #project5 {
   grid-area: project5;
-
-  background-color: #b0dff0;
+  background-color: #a5e5fc;
 }
 
 #project5:hover {
-  background-color: #a5e5fc;
+  background-color: #b0dff0;
   cursor: pointer;
 }
 
@@ -690,14 +689,6 @@ a {
   position: absolute;
 }
 
-#aboutmewrapper img {
-  width: 41%;
-  position: absolute;
-  z-index: 1;
-  bottom: -7.1em;
-  left: 25%;
-}
-
 #headingwrapper2,
 #headingwrapper3 {
   float: left;
@@ -718,7 +709,7 @@ a {
 
 #firsthalf p {
   color: white;
-  margin-top: 10em;
+  margin-top: 10.5em;
   margin-left: 2.5em;
   width: 70%;
 }
@@ -727,7 +718,7 @@ a {
 
 .slidescontainer {
   max-width: 30em;
-  max-height: 24em;
+  max-height: 20em;
   margin-left: 4.5em;
   margin-top: 8em;
   overflow-x: scroll;
