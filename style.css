@@ -86,14 +86,11 @@ a {
   margin-left: 10em;
 }
 
-#headingwrapper div {
-  background-color: #e8907d;
-  margin-top: -4em;
-}
-
 .underline {
   height: 1em;
   width: 50%;
+  background-color: #e8907d;
+  margin-top: -4em;
 }
 
 #txtwrapper {
@@ -375,14 +372,22 @@ a {
   background-color: white;
 }
 
-#hp-section1 p {
+#hp-section1 p,
+#volt-section1 p,
+#kogi-section1 p,
+#tokyo-section1 p,
+#todo-section1 p {
   width: 50%;
   position: absolute;
   top: 14em;
   left: 4.5em;
 }
 
-#hp-section1 img {
+#hp-section1 img,
+#volt-section1 img,
+#kogi-section1 img,
+#tokyo-section1 img,
+#todo-section1 img {
   margin-left: 65%;
   margin-top: -5.5em;
 }
@@ -438,18 +443,6 @@ a {
   background-color: #fe9c4a;
 }
 
-#volt-section1 p {
-  width: 50%;
-  position: absolute;
-  top: 14em;
-  left: 4.5em;
-}
-
-#volt-section1 img {
-  margin-left: 65%;
-  margin-top: -5.5em;
-}
-
 #volt-section2,
 #volt-section3,
 #volt-section4 {
@@ -496,18 +489,6 @@ a {
   padding: 1.5em;
 }
 
-#kogi-section1 p {
-  width: 50%;
-  position: absolute;
-  top: 14em;
-  left: 4.5em;
-}
-
-#kogi-section1 img {
-  margin-left: 65%;
-  margin-top: -5.5em;
-}
-
 #kogi-section2,
 #kogi-section3,
 #kogi-section4,
@@ -549,18 +530,6 @@ a {
   background-color: #8791e3;
 }
 
-#tokyo-section1 p {
-  width: 50%;
-  position: absolute;
-  top: 14em;
-  left: 4.5em;
-}
-
-#tokyo-section1 img {
-  margin-left: 65%;
-  margin-top: -5.5em;
-}
-
 #tokyo-section2,
 #tokyo-section3,
 #tokyo-section4,
@@ -595,23 +564,11 @@ a {
   padding: 1.5em;
 }
 
-#todo-section1 p {
-  width: 50%;
-  position: absolute;
-  top: 14em;
-  left: 4.5em;
-}
-
 #todo-underline {
   height: 0.5em;
   width: 50%;
   margin-top: -2em;
   background-color: #4b5f54;
-}
-
-#todo-section1 img {
-  margin-left: 65%;
-  margin-top: -5.5em;
 }
 
 #todo-section2,
@@ -728,7 +685,9 @@ a {
   font-size: 0.9em;
 }
 
-#a1 h3 {
+#a1 h3,
+#a2 h3,
+#a3 h3 {
   margin-left: 2.5em;
   margin-top: 1.5em;
 }
@@ -737,32 +696,16 @@ a {
   margin-left: -11em;
 }
 
-#a1 span {
+#a1 span,
+#a2 span,
+#a3 span {
   font-weight: bold;
-}
-
-#a2 h3 {
-  margin-left: 2.5em;
-  margin-top: 1.5em;
 }
 
 #a2 p {
   margin-left: -6.5em;
 }
 
-#a2 span {
-  font-weight: bold;
-}
-
-#a3 h3 {
-  margin-left: 2.5em;
-  margin-top: 1.5em;
-}
-
 #a3 p {
   margin-left: -3.6em;
-}
-
-#a3 span {
-  font-weight: bold;
 }
