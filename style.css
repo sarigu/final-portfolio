@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
 /* //////////// Navigation ////////// */
 
 nav {
@@ -7,6 +9,7 @@ nav {
   top: 0;
   z-index: 1;
   width: 100%;
+  max-height: 4.5em;
 }
 
 nav a {
@@ -29,6 +32,10 @@ nav a:hover {
   color: #d3e8f5;
 }
 
+#proj-nav a:hover {
+  color: #ffd9a898;
+}
+
 nav img {
   width: 50%;
   margin-top: -1.2em;
@@ -41,21 +48,32 @@ nav div {
 
 nav #contact {
   float: right;
+  margin-right: 1em;
 }
 
 /* //////////// Landing page ///////// */
 
 h1 {
   font-size: 5em;
+  font-family: "Open Sans", sans-serif;
 }
 h2 {
   font-size: 2.5em;
+  font-family: "Open Sans", sans-serif;
 }
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
 #indexwrapper {
   background-color: #f4e8da;
-  width: 100%;
   padding-top: 4em;
-  margin: 0;
 }
 
 #indexwrapper * {
@@ -80,9 +98,9 @@ h2 {
 
 #txtwrapper {
   float: left;
-  margin-top: 2.5em;
-  margin-left: 19em;
-  font-size: 1.5em;
+  margin-top: 65px;
+  margin-left: 21em;
+  font-size: 1.2em;
   width: 24%;
 }
 
@@ -174,7 +192,7 @@ h2 {
 }
 
 #txt3 {
-  margin-left: 15em;
+  margin-left: 22em;
 }
 
 #txt4 {
@@ -184,14 +202,15 @@ h2 {
 /* //////////// Projects page ///////// */
 
 #projectswrapper {
-  margin: 5em auto auto;
+  margin: auto auto;
+  padding-top: 5em;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   width: 80%;
   height: 30em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "project1 project2 project3" "project4 project5 project3";
+  grid-template-areas: "project1 project2 project3" "project4 project5 .";
 }
 
 #projectswrapper div {
@@ -204,16 +223,47 @@ h2 {
   width: 20em;
   background-color: #d5d5d5;
 }
+
+#project1:hover {
+  background-color: #d5d5d58c;
+  cursor: pointer;
+}
+
+#project1 img {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
 #project2 {
   grid-area: project2;
   width: 20em;
   background-color: #ffc391;
 }
+#project2:hover {
+  background-color: #ffc391b0;
+  cursor: pointer;
+}
+
+#project2 img {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 12%;
+}
+
 #project3 {
   grid-area: project3;
   width: 20em;
   background-color: #b7d3c1;
 }
+#project3:hover {
+  background-color: #b7d3c198;
+  cursor: pointer;
+}
+#project3 img {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
 #project4 {
   grid-area: project4;
   width: 20em;
@@ -221,11 +271,30 @@ h2 {
   background-color: #dcdeef;
 }
 
+#project4:hover {
+  background-color: #dcdeef8e;
+  cursor: pointer;
+}
+
+#project4 img {
+  margin-left: 10%;
+}
+
 #project5 {
   grid-area: project5;
   width: 20em;
   margin: 1em;
   background-color: #ffdaa8;
+}
+
+#project5:hover {
+  background-color: #ffd9a898;
+  cursor: pointer;
+}
+
+#project5 img {
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 /* //////////// Modal ///////// */
@@ -282,13 +351,12 @@ h2 {
 #tokyowrapper,
 #todowrapper {
   padding-top: 4em;
-  margin-left: 2em;
-  margin-right: 2em;
 }
 
 #hp-section1 {
   background-color: #d5d5d5;
   color: white;
+  padding: 1.5em;
 }
 
 #hp-headingwrapper,
@@ -297,6 +365,7 @@ h2 {
 #tokyo-headingwrapper,
 #todo-headingwrapper {
   float: left;
+  margin-left: 2.5em;
 }
 
 .small-underline {
@@ -307,14 +376,15 @@ h2 {
 }
 
 #hp-section1 p {
-  width: 40%;
+  width: 50%;
   position: absolute;
-  top: 12em;
-  left: 3em;
+  top: 14em;
+  left: 4.5em;
 }
 
 #hp-section1 img {
-  margin-left: 15em;
+  margin-left: 65%;
+  margin-top: -5.5em;
 }
 
 .hp-underline {
@@ -330,24 +400,35 @@ h2 {
   color: #d5d5d5;
   margin-top: 4em;
 }
+
 .hp-headingwrapper2 {
   float: left;
-  margin-left: 81%;
+  margin-right: 80%;
   margin-bottom: 2em;
 }
 
 #hp-section2,
 #hp-section3,
 #hp-section4 p {
-  width: 60%;
+  width: 50%;
   margin-top: 1em;
+  margin-left: 3.5em;
 }
 
+#hp-section4 .hp-headingwrapper2 {
+  margin-left: 3.5em;
+}
 /* //////////// Volt///////// */
 
 #volt-section1 {
   background-color: #ffc391;
   color: #fe9c4a;
+  padding: 1.5em;
+}
+
+#volt-headingwrapper {
+  float: left;
+  margin-left: 2.5em;
 }
 
 #volt-underline {
@@ -358,14 +439,15 @@ h2 {
 }
 
 #volt-section1 p {
-  width: 40%;
+  width: 50%;
   position: absolute;
-  top: 12em;
-  left: 3em;
+  top: 14em;
+  left: 4.5em;
 }
 
 #volt-section1 img {
-  margin-left: 10em;
+  margin-left: 65%;
+  margin-top: -5.5em;
 }
 
 #volt-section2,
@@ -378,13 +460,18 @@ h2 {
 #volt-section2,
 #volt-section3,
 #volt-section4 p {
-  width: 60%;
-  margin-top: 1em;
+  width: 50%;
+  margin-left: 3.5em;
+}
+
+#volt-section2 span {
+  font-weight: bold;
 }
 
 .volt-headingwrapper2,
 .kogi-headingwrapper2,
-.tokyo-headingwrapper2 {
+.tokyo-headingwrapper2,
+.todo-headingwrapper2 {
   float: left;
   margin-right: 80%;
   margin-bottom: 2em;
@@ -397,22 +484,28 @@ h2 {
   background-color: #ffc391;
 }
 
+#volt-section4 .volt-headingwrapper2 {
+  margin-left: 3.5em;
+}
+
 /* //////////// Kogi's lunchbox adventures///////// */
 
 #kogi-section1 {
   background-color: #ffdaa8;
   color: white;
+  padding: 1.5em;
 }
 
 #kogi-section1 p {
-  width: 40%;
+  width: 50%;
   position: absolute;
-  top: 12em;
-  left: 3em;
+  top: 14em;
+  left: 4.5em;
 }
 
 #kogi-section1 img {
-  margin-left: 40em;
+  margin-left: 65%;
+  margin-top: -5.5em;
 }
 
 #kogi-section2,
@@ -427,8 +520,8 @@ h2 {
 #kogi-section3,
 #kogi-section4,
 #kogi-section5 p {
-  width: 60%;
-  margin-top: 1em;
+  width: 50%;
+  margin-left: 3.5em;
 }
 
 .kogi-underline2 {
@@ -437,22 +530,35 @@ h2 {
   margin-top: -2em;
   background-color: #ffdaa8;
 }
+
+#kogi-section5 .kogi-headingwrapper2 {
+  margin-left: 3.5em;
+}
 /* //////////// Discover tokyo///////// */
 
 #tokyo-section1 {
   background-color: #dcdeef;
   color: #8791e3;
+  padding: 1.5em;
+}
+
+#tokyo-underline {
+  height: 0.5em;
+  width: 50%;
+  margin-top: -2em;
+  background-color: #8791e3;
 }
 
 #tokyo-section1 p {
-  width: 40%;
+  width: 50%;
   position: absolute;
-  top: 12em;
-  left: 3em;
+  top: 14em;
+  left: 4.5em;
 }
 
 #tokyo-section1 img {
-  margin-left: 40em;
+  margin-left: 65%;
+  margin-top: -5.5em;
 }
 
 #tokyo-section2,
@@ -474,26 +580,38 @@ h2 {
 #tokyo-section3,
 #tokyo-section4,
 #tokyo-section5 p {
-  width: 60%;
-  margin-top: 1em;
+  width: 50%;
+  margin-left: 3.5em;
 }
 
+#tokyo-section5 .tokyo-headingwrapper2 {
+  margin-left: 3.5em;
+}
 /* //////////// Todo tokyo///////// */
 
 #todo-section1 {
   background-color: #b7d3c1;
   color: #4b5f54;
+  padding: 1.5em;
 }
 
 #todo-section1 p {
-  width: 40%;
+  width: 50%;
   position: absolute;
-  top: 12em;
-  left: 3em;
+  top: 14em;
+  left: 4.5em;
+}
+
+#todo-underline {
+  height: 0.5em;
+  width: 50%;
+  margin-top: -2em;
+  background-color: #4b5f54;
 }
 
 #todo-section1 img {
-  margin-left: 40em;
+  margin-left: 65%;
+  margin-top: -5.5em;
 }
 
 #todo-section2,
@@ -515,8 +633,8 @@ h2 {
 #todo-section3,
 #todo-section4,
 #todo-section5 p {
-  width: 60%;
-  margin-top: 1em;
+  width: 50%;
+  margin-left: 3.5em;
 }
 
 /* //////////// About me page ///////// */
@@ -529,73 +647,122 @@ h2 {
 #firsthalf {
   display: inline-block;
   width: 50%;
-  padding: 0;
+  padding-top: 1.5em;
   margin: 0;
   background-color: #f5e295;
-  height: 50em;
+  height: 38em;
   position: absolute;
 }
 
 #secondhalf {
   display: inline-block;
   width: 50%;
-  padding: 0;
+  padding-top: 1.5em;
   margin-left: 50%;
   background-color: #d3e8f5;
-  height: 50em;
+  height: 38em;
   position: absolute;
 }
 
 #aboutmewrapper img {
-  width: 35%;
+  width: 40%;
   position: absolute;
   z-index: 1;
-  bottom: -3em;
-  left: 30%;
+  bottom: -3.4em;
+  left: 25%;
 }
 
 #headingwrapper2,
 #headingwrapper3 {
   float: left;
-  margin-top: 0.4em;
-  margin-left: 1em;
+  margin-left: 2.5em;
 }
 
-#headingwrapper2 h1,
-#headingwrapper3 h1 {
-  font-size: 4em;
+#headingwrapper2 h2,
+#headingwrapper3 h2 {
   color: white;
 }
+
 #headingwrapper2 div,
 #headingwrapper3 div {
   background-color: white;
-  margin-top: -3em;
+  height: 0.5em;
+  margin-top: -2em;
 }
 
 #firsthalf p {
   color: white;
-  margin-top: 8em;
-  margin-left: 1em;
-  width: 80%;
-  font-size: 1.5em;
+  margin-top: 9em;
+  margin-left: 2.5em;
+  width: 70%;
 }
 
 /*Slideshow*/
+
 .slidescontainer {
   max-width: 30em;
   max-height: 24em;
-  margin-left: 5em;
-  margin-top: 10em;
+  margin-left: 4.5em;
+  margin-top: 112px;
   overflow-x: scroll;
   white-space: nowrap; /*Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered*/
 }
+
 .slidescontainer * {
   display: inline-block;
 }
 
 .slidescontainer article {
-  position: relative;
-  background-color: white;
+  background-color: #e8f2f8;
   height: 24em;
   width: 30em;
+}
+
+/*Positioning of text from here */
+.slidescontainer p {
+  width: calc(100% - 120px);
+  /* -x- width = 100%[article width] - ( 100px[total width of .title and .image] +  20px[for aesthetics]) */
+  margin: 80px auto auto -50px;
+  vertical-align: top;
+  white-space: initial;
+  font-size: 0.9em;
+}
+
+#a1 h3 {
+  margin-left: 2.5em;
+  margin-top: 1.5em;
+}
+
+#a1 p {
+  margin-left: -11em;
+}
+
+#a1 span {
+  font-weight: bold;
+}
+
+#a2 h3 {
+  margin-left: 2.5em;
+  margin-top: 1.5em;
+}
+
+#a2 p {
+  margin-left: -6.5em;
+}
+
+#a2 span {
+  font-weight: bold;
+}
+
+#a3 h3 {
+  margin-left: 2.5em;
+  margin-top: 1.5em;
+}
+
+#a3 p {
+  margin-left: -3.6em;
+}
+
+#a3 span {
+  font-weight: bold;
 }
