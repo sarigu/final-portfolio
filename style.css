@@ -199,10 +199,17 @@ a {
 
 /* //////////// Projects page ///////// */
 
-#projectswrapper {
-  margin: auto auto;
+#project-main {
+  width: 100%;
   padding-top: 5em;
-  grid-column-gap: 50px;
+  background-color: #bdddf1;
+  height: 45em;
+}
+
+#projectswrapper {
+  margin-left: 3.5em;
+  padding-top: 4em;
+  grid-column-gap: 80px;
   grid-row-gap: 50px;
   width: 80%;
   height: 30em;
@@ -216,16 +223,49 @@ a {
   padding: 0;
   width: 20em;
   height: 18em;
+  background-color: white;
+}
+
+#projectswrapper div:hover {
+  background-color: rgba(255, 255, 255, 0.589);
+}
+
+#projectswrapper h3 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: inline-block;
+  position: absolute;
+  color: #e8907d;
+  height: 15em;
+}
+
+#proj-txt1 {
+  top: 10em;
+  left: 20em;
+}
+
+#proj-txt2 {
+  top: 8.5em;
+  left: 41.5em;
+}
+
+#proj-txt3 {
+  top: 10em;
+  left: 62.8em;
+}
+
+#proj-txt4 {
+  top: 31em;
+  left: 20em;
+}
+
+#proj-txt5 {
+  top: 29em;
+  left: 41.5em;
 }
 
 #project1 {
   grid-area: project1;
-  background-color: #c5c5c5;
-}
-
-#project1:hover {
-  background-color: #d5d5d5;
-  cursor: pointer;
 }
 
 #project1 img {
@@ -236,11 +276,6 @@ a {
 
 #project2 {
   grid-area: project2;
-  background-color: #fdbb84;
-}
-#project2:hover {
-  background-color: #ffc391;
-  cursor: pointer;
 }
 
 #project2 img {
@@ -252,12 +287,8 @@ a {
 #project3 {
   grid-area: project3;
   width: 20em;
-  background-color: #9fcaaf;
 }
-#project3:hover {
-  background-color: #b7d3c1;
-  cursor: pointer;
-}
+
 #project3 img {
   margin-left: 10%;
   margin-top: 5%;
@@ -265,12 +296,6 @@ a {
 
 #project4 {
   grid-area: project4;
-  background-color: #d0d3ec;
-}
-
-#project4:hover {
-  background-color: #dcdeef;
-  cursor: pointer;
 }
 
 #project4 img {
@@ -280,12 +305,6 @@ a {
 
 #project5 {
   grid-area: project5;
-  background-color: #a5e5fc;
-}
-
-#project5:hover {
-  background-color: #b0dff0;
-  cursor: pointer;
 }
 
 #project5 img {
