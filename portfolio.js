@@ -11,6 +11,7 @@ function init() {
 }
 
 function openNav() {
+  sidenav.style.display = "block";
   sidenav.style.width = "100%";
 }
 

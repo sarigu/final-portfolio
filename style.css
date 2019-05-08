@@ -51,6 +51,14 @@ nav #contact {
   margin-right: 1em;
 }
 
+#burgermenu {
+  display: none;
+}
+
+.sidenav {
+  display: none;
+}
+
 /* ////////////In general ///////// */
 
 h1 {
@@ -840,6 +848,7 @@ a {
     color: black;
     font-size: 2.7em;
     cursor: pointer;
+    display: block;
   }
 
   nav {
