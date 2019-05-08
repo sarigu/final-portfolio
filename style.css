@@ -202,8 +202,8 @@ a {
 #project-main {
   width: 100%;
   padding-top: 5em;
-  background-color: #bdddf1;
-  height: 45em;
+  background-color: #d3e8f5;
+  height: 48em;
 }
 
 #projectswrapper {
@@ -223,11 +223,11 @@ a {
   padding: 0;
   width: 20em;
   height: 18em;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.342);
 }
 
 #projectswrapper div:hover {
-  background-color: rgba(255, 255, 255, 0.589);
+  background-color: white;
 }
 
 #projectswrapper h3 {
@@ -827,10 +827,357 @@ a {
 }
 
 #contactmodal p {
-  color: rgb(93, 111, 188);
+  color: #bdddf1;
   font-size: 2em;
   font-weight: bold;
 }
 #contactmodal img {
   width: 4%;
+}
+
+@media all and (max-width: 400px) {
+  #burgermenu {
+    color: black;
+    font-size: 2.7em;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .sidenav {
+    height: 18em;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5em;
+    z-index: 1;
+  }
+
+  .sidenav a {
+    padding: 0.8em;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    margin-top: -1em;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0.5em;
+    left: 6.5em;
+    font-size: 2.8em;
+    color: black;
+  }
+
+  .sidenav h4 {
+    margin-left: 0.8em;
+  }
+
+  #email {
+    color: #bdddf1;
+    margin-top: -1em;
+    margin-left: 0.8em;
+  }
+  .git {
+    width: 8%;
+    margin-top: -0.5em;
+    margin-left: 0.8em;
+  }
+
+  /* ///// Landing page ///// */
+
+  #indexwrapper {
+    height: 32em;
+  }
+
+  #headingwrapper {
+    margin-left: 1.5em;
+    margin-top: -5.5em;
+  }
+
+  #txtwrapper {
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    width: 70%;
+  }
+
+  #imgcontainer {
+    width: 100%;
+    margin-top: 23.5em;
+    margin-left: 8em;
+  }
+
+  #img1,
+  #img2,
+  #img3,
+  #img5 {
+    display: none;
+  }
+
+  #txt1 {
+    margin-left: -1em;
+    margin-top: 1em;
+  }
+
+  #txt2 {
+    margin-left: 1.5em;
+    margin-top: 1.1em;
+  }
+
+  #txt3 {
+    margin-top: 0.8em;
+    margin-left: 3.4em;
+  }
+
+  #txt4 {
+    margin-top: 0.8em;
+    margin-left: 3em;
+  }
+
+  /* ///// About me page ///// */
+
+  #firsthalf {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 33em;
+    margin-top: -4em;
+  }
+
+  #firsthalf p {
+    margin-top: 7.5em;
+  }
+
+  #secondhalf {
+    margin-left: 0em;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 33em;
+  }
+
+  .slidescontainer {
+    max-width: 18em;
+    max-height: 20em;
+    margin-left: 2.5em;
+  }
+
+  .slidescontainer article {
+    background-color: white;
+    width: 18em;
+    height: 50em;
+  }
+
+  /* ///// Projects page ///// */
+
+  #project-main {
+    height: 78em;
+  }
+
+  #projectswrapper {
+    margin-top: -4.5em;
+    grid-row-gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "project1" "project2" "project3" "project4" "project5";
+  }
+
+  #projectswrapper div {
+    width: 15em;
+    height: 12em;
+    background-color: rgba(255, 255, 255, 0.342);
+  }
+
+  #projectswrapper h3 {
+    display: none;
+  }
+
+  #project3 img {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 4.5%;
+  }
+
+  #project4 img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+
+  #project5 img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  /* ///// Harry potter///// */
+  #hp-section1 {
+    height: 45em;
+    margin-top: -4em;
+  }
+
+  #hp-headingwrapper,
+  #volt-headingwrapper,
+  #kogi-headingwrapper,
+  #tokyo-headingwrapper,
+  #todo-headingwrapper {
+    margin-left: 1em;
+  }
+
+  #hp-section1 p,
+  #volt-section1 p,
+  #tokyo-section1 p,
+  #todo-section1 p {
+    width: 68%;
+    top: 18em;
+    left: 3em;
+  }
+
+  #hp-section1 img,
+  #volt-section1 img,
+  #kogi-section1 img,
+  #tokyo-section1 img,
+  #todo-section1 img {
+    display: none;
+  }
+
+  #hp-section2,
+  #hp-section3,
+  #hp-section4 {
+    margin-bottom: 1.5em;
+  }
+
+  #hp-section2,
+  #hp-section3,
+  #hp-section4 p {
+    width: 68%;
+    margin-left: 2em;
+  }
+
+  #hp-section4 .hp-headingwrapper2 {
+    margin-left: 2em;
+  }
+
+  /* ///// Volt///// */
+
+  #volt-section1 {
+    height: 40em;
+    margin-top: -4em;
+  }
+
+  #volt-headingwrapper {
+    margin-left: 1em;
+  }
+
+  #volt-section2,
+  #volt-section3,
+  #volt-section4 {
+    margin-bottom: 1.5em;
+  }
+
+  #volt-section2,
+  #volt-section3,
+  #volt-section4 p {
+    width: 68%;
+    margin-left: 2.1em;
+  }
+
+  #volt-section4 .volt-headingwrapper2 {
+    margin-left: 2em;
+  }
+
+  /* //////////// Kogi's lunchbox adventures///////// */
+
+  #kogi-section1 {
+    height: 31em;
+    margin-top: -4em;
+  }
+
+  #kogi-section1 p {
+    top: 20em;
+    left: 3em;
+    position: absolute;
+    width: 68%;
+  }
+
+  #kogi-section2,
+  #kogi-section3,
+  #kogi-section4,
+  #kogi-section5 {
+    margin-bottom: 1.5em;
+  }
+
+  #kogi-section2,
+  #kogi-section3,
+  #kogi-section4,
+  #kogi-section5 p {
+    width: 68%;
+    margin-left: 2.1em;
+  }
+
+  #kogi-img1,
+  #kogi-img2,
+  #kogi-img3 {
+    width: 100%;
+  }
+
+  #spritesheet {
+    width: 90%;
+  }
+
+  #kogi-section5 .kogi-headingwrapper2 {
+    margin-left: 2em;
+  }
+
+  /* //////////// Discover tokyo///////// */
+
+  #tokyo-section1 {
+    height: 31em;
+    margin-top: -4em;
+  }
+
+  #tokyo-section2,
+  #tokyo-section3,
+  #tokyo-section4,
+  #tokyo-section5 {
+    margin-bottom: 1.5em;
+  }
+
+  #tokyo-section2,
+  #tokyo-section3,
+  #tokyo-section4,
+  #tokyo-section5 p {
+    width: 68%;
+    margin-left: 2.1em;
+  }
+
+  #tokyo-section5 .tokyo-headingwrapper2 {
+    margin-left: 2em;
+  }
+  /* //////////// Todo tokyo///////// */
+
+  #todo-section1 {
+    height: 35em;
+    margin-top: -4em;
+  }
+
+  #todo-section2,
+  #todo-section3,
+  #todo-section4,
+  #todo-section5 {
+    margin-bottom: 1.5em;
+  }
+
+  #todo-section2,
+  #todo-section3,
+  #todo-section4,
+  #todo-section5 p {
+    width: 68%;
+    margin-left: 2.1em;
+  }
 }

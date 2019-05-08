@@ -1,16 +1,21 @@
-let project1 = document.querySelector("#project1 img");
-let project2 = document.querySelector("#project2 img");
-let project3 = document.querySelector("#project3 img");
-let project4 = document.querySelector("#project4 img");
-let project5 = document.querySelector("#project5 img");
+let burgermenu = document.querySelector("#burgermenu");
+let sidenav = document.querySelector(".sidenav");
+let closeBtn = document.querySelector(".closebtn");
+
+init();
 
 function init() {
+  burgermenu.addEventListener("click", openNav);
+  closeBtn.addEventListener("click", closeNav);
   document.querySelector("#contact").addEventListener("click", openContact);
-  project1.addEventListener("click", openProject);
-  project2.addEventListener("click", openProject);
-  project3.addEventListener("click", openProject);
-  project4.addEventListener("click", openProject);
-  project5.addEventListener("click", openProject);
+}
+
+function openNav() {
+  sidenav.style.width = "100%";
+}
+
+function closeNav() {
+  sidenav.style.width = "0%";
 }
 
 function openContact(e) {
@@ -37,4 +42,3 @@ function openProject(event) {
     window.open("kogi.html", "_self");
   }
 }
-init();
